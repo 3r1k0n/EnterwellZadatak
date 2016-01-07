@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EnterwellZadatak.PoslovnaJedinica">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Roditelj" Type="EnterwellZadatak.PoslovnaJedinica">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.098" Y="0.343" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EABAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PoslovnaJedinica.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Roditelj" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnterwellZadatak.Djelatnik">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEQAABBEAAAAAAAAAAAAAAEAAAAAAABAAAAAQQ=</HashCode>
+      <FileName>Djelatnik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterwellZadatak.Direktor">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAEAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Direktor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterwellZadatak.Serviser">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serviser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterwellZadatak.Vjestina">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vjestina.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterwellZadatak.Organizacija">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAQCAAAEAAAQAAABAAAAAgAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Organizacija.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
