@@ -1,0 +1,46 @@
+1. Opis zadatka
+Poslovna organizacija grupira djelatnike u poslovne jedinice i potreban joj je program za pregled poslovnih
+jedinica i djelatnika.
+Poslovne jedinice su organizirane u stablastu strukturu. Poslovna jedinica ima svoj naziv i svoju poslovnu
+jedinicu roditelja. Poslovna jedinica koja je na vrhu stabla nema poslovnu jedinicu roditelja.
+Postoje dvije vrste djelatnika:
+ direktor poslovne jedinice i
+ serviser.
+Svaki djelatnik ima ime, prezime, OIB i poslovnu jedinicu kojoj pripada. Jedan djelatnik može pripadati samo
+jednoj poslovnoj jedinici.
+Direktor dodatno ima i naziv službenog auta koje mu je dodijeljeno.
+Serviser dodatno ima skup vještina koje posjeduje (rad na računalu, elektronika, upravljanje
+automobilom, ...).
+Zadatak 1.
+Potrebno je nacrtati klasni dijagram opisani program (standardno, ono što se uči na faksu). Više na
+https://en.m.wikipedia.org/wiki/Class_diagram.
+Zadatak 2.
+Potrebno je napraviti program za prikaz poslovnih jedinica. Stablo poslovnih jedinica mora imati barem 3
+razine. Svaka poslovna jedinica treba imati barem 2 djelatnika (jednog direktora i barem jednog servisera).
+Izborom neke poslovne jedinice trebaju se ispisati djelatnici te poslovne jedinice, a zatim i njene poslovne
+jedinice djeca. Prilikom ispisivanja djelatnika potrebno je ispisati 4 stupca:
+ ime,
+ prezime,
+ OIB,
+ dodatne informacije.
+Unutar stupca dodatne informacije za direktore treba pisati: „Službeno vozilo: {naziv-službenog-vozila}“.
+
+Unutar stupca dodatne informacije za servisere treba pisati: „Vještine: {vještina-1}, {vještina-2}, …“.
+Podaci (poslovne jedinice i djelatnici) se mogu inicijalizirati na početku programa (ne trebaju se učitavati iz
+vanjskih izvora).
+2. Tehnički zahtjevi
+ Klasni dijagram se može crtati u bilo kojem programu. Važno je samo da ga se dostavi kao sliku.
+ Program može biti implementiran kao:
+o konzolna aplikacija,
+o WPF aplikacija,
+o ASP.NET MVC web aplikacija ili
+o nešto treće (ali nam pojasnite zašto ste baš izabrali ovo treće ).
+3. Opći zahtjevi
+ Sustav ne treba nešto posebno lijepo izgledati.
+ Sustav ne treba ići previše u širinu, dovoljno je samo da dobijemo uvid u način na koji programer
+radi, kako organizira kod i slično.
+ TIJEKOM IZRADE SUSTAVA JE POTREBNO KORISTITI STANDARDNE I NAJBOLJE PRAKSE ZA
+RAZVOJ.
+ Ako se sustav i ne implementira u cijelosti, a pokaže se korištenje dobrih praksi i ideja, zadatak će
+se prihvatiti. Važno je da vidimo način na koji programer razmišlja i pristupa problemu. Također,
+zanima nas poznavanje objektno orijentiranog programiranja.
