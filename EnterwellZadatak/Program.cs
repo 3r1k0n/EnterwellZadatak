@@ -183,19 +183,16 @@ namespace EnterwellZadatak
                 }
             };
 
-            ispisPoslovnice(jedinica01,org);
+            prikazPJ(jedinica01,org);
             Console.ReadLine();
         }
 
-        // ispisuje prvo podatke o poslovnici, pa o njenim radnicima i onda rekurzivno se poziva za poslovnice ispod nje
-        private static void ispisPoslovnice(PoslovnaJedinica jedinica,Organizacija org)
+        // ispisuje prvo podatke o poslovnoj jedinici, pa o njenim radnicima i onda rekurzivno se poziva za poslovnice ispod nje
+        private static void prikazPJ(PoslovnaJedinica jedinica,Organizacija org)
         {
             Console.WriteLine("-------------------------");
-            Console.WriteLine("Naziv poslovne jedinice: "+jedinica.Naziv);
+            jedinica.Ispis();
 
-            string roditelj = jedinica.Roditelj == null ? "" : jedinica.Roditelj.Naziv;
-
-            Console.WriteLine("Naziv nadredjene jedinice: " + roditelj);
             Console.WriteLine("Ime | Prezime | OIB | Dodatne informacije");
 
             foreach(Djelatnik d in org.Djelatnici.Where(x => x.Jedinica == jedinica))
@@ -206,7 +203,7 @@ namespace EnterwellZadatak
             
             foreach(PoslovnaJedinica pj in org.PoslovneJedinice.Where(x => x.Roditelj == jedinica))
             {
-                ispisPoslovnice(pj, org);
+                prikazPJ(pj, org);
             }
         }
 

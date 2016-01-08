@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EnterwellZadatak
 {
-    public class PoslovnaJedinica
+    public class PoslovnaJedinica : Ispisivanje
     {
         private string naziv;
         private PoslovnaJedinica roditelj;
@@ -36,5 +36,13 @@ namespace EnterwellZadatak
             }
         }
 
+        public void Ispis()
+        {
+            Console.WriteLine("Naziv poslovne jedinice: " + Naziv);
+
+            string roditeljString = Roditelj == null ? "" : Roditelj.Naziv;
+
+            Console.WriteLine("Naziv nadredjene jedinice: " + roditeljString);
+        }
     }
 }

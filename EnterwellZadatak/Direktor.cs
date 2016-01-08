@@ -24,7 +24,8 @@ namespace EnterwellZadatak
 
         public override void Ispis()
         {
-            Console.Write("Sluzbeno vozilo: " + NazivSluzAuta + "\n");
+            Console.WriteLine("{0} | {1} | {2} | {3}", Ime, Prezime, OIB,
+                "Sluzbeno vozilo: " + NazivSluzAuta);
         }
     }
 }

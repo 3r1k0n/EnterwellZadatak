@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EnterwellZadatak
 {
-    public abstract class Djelatnik
+    public abstract class Djelatnik : Ispisivanje
     {
         private string ime;
         private string prezime;
@@ -63,7 +63,7 @@ namespace EnterwellZadatak
                 jedinica = value;
             }
         }
+
         public abstract void Ispis();
-     
     }
 }

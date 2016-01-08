@@ -14,30 +14,32 @@
     <ShowAsAssociation>
       <Property Name="Roditelj" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="EnterwellZadatak.Djelatnik">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEQAABBEAAAAAAAAAAAAAAEAAAAAAABAAAAAQQ=</HashCode>
+      <HashCode>AAAAAAEQAABBEAAAAAAAAAAAAAAAAAAAAAABAAAAAQQ=</HashCode>
       <FileName>Djelatnik.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="EnterwellZadatak.Direktor">
     <Position X="5.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAEAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Direktor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnterwellZadatak.Serviser">
     <Position X="8.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Serviser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnterwellZadatak.Vjestina">
-    <Position X="9.75" Y="1.75" Width="1.5" />
+    <Position X="9" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Vjestina.cs</FileName>
@@ -50,5 +52,12 @@
       <FileName>Organizacija.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Interface Name="EnterwellZadatak.Ispisivanje">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ispisivanje.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

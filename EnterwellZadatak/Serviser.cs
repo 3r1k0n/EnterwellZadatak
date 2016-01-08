@@ -7,7 +7,7 @@ namespace EnterwellZadatak
 {
     public class Serviser : Djelatnik
     {
-        private List<Vjestina> vjestine=new List<Vjestina>();
+        private List<Vjestina> vjestine = new List<Vjestina>();
 
         public List<Vjestina> Vjestine
         {
@@ -18,14 +18,14 @@ namespace EnterwellZadatak
 
             set
             {
-                this.vjestine=value;
+                this.vjestine = value;
             }
         }
 
         public override void Ispis()
         {
-            Console.Write(Ime + " | " + Prezime + " | " + OIB + " | ");
-            Console.Write("Vjestine: " + String.Join(", ", Vjestine.Select(x => x.Ime))+"\n");
+            Console.WriteLine("{0} | {1} | {2} | {3}",Ime,Prezime,OIB,
+                "Vjestine: "+String.Join(", ",Vjestine.Select(x=>x.Ime)));
         }
     }
 }

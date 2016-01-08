@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Direktor.cs" />
     <Compile Include="Djelatnik.cs" />
+    <Compile Include="Ispisivanje.cs" />
     <Compile Include="Organizacija.cs" />
     <Compile Include="PoslovnaJedinica.cs" />
     <Compile Include="Program.cs" />
