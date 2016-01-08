@@ -10,6 +10,12 @@ namespace EnterwellZadatak
     {
         static void Main(string[] args)
         {
+            Organizacija org = StvoriPodatke();
+            PitajKorisnika(org);
+        }
+
+        private static Organizacija StvoriPodatke()
+        {
             #region poslovneJedinice
             PoslovnaJedinica jedinica01 = new PoslovnaJedinica
             {
@@ -182,9 +188,33 @@ namespace EnterwellZadatak
                     serviser1,serviser2,serviser3,serviser4,serviser5,serviser6
                 }
             };
+            return org;
+        }
 
-            prikazPJ(jedinica01,org);
-            Console.ReadLine();
+        private static void PitajKorisnika(Organizacija org)
+        {
+            while (true)
+            {
+                Console.WriteLine("Upisite naziv poslovne jedinice koju zelite ispisati ili 'quit' za izlaz. ");
+                Console.WriteLine("Moguci izbor: " + String.Join(", ", org.PoslovneJedinice.Select(x => x.Naziv)));
+                string odgovor = Console.ReadLine().ToLower();
+
+                if (odgovor != "quit")
+                {
+                    try
+                    {
+                        prikazPJ(org.PoslovneJedinice.Where(x => x.Naziv.ToLower() == odgovor).First(), org);
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Neispravan naziv, pokusajte ponovo.\n");
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
         }
 
         // ispisuje prvo podatke o poslovnoj jedinici, pa o njenim radnicima i onda rekurzivno se poziva za poslovnice ispod nje
